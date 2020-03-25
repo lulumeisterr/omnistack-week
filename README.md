@@ -1,2 +1,8 @@
-# lulumeisterr
-OminiStackWeek11
+# Tecnologias
+
+# BackEnd
+
+- Nodejs
+  - express
+  - Knex
+  - nodemon
