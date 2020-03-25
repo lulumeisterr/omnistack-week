@@ -1,0 +1,25 @@
+{
+  "name": "com.oministack.backend",
+  "version": "1.0.0",
+  "description": "Semana oministack",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/lulumeisterr.git"
+  },
+  "author": "Lucas Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/lulumeisterr/issues"
+  },
+  "homepage": "https://github.com/github.com/lulumeisterr#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "nodemon": "^2.0.2",
+    "sqlite3": "^4.1.1"
+  }
+}
