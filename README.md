@@ -1,7 +1,5 @@
 # Tecnologias
 
-# BackEnd
-
 - Nodejs
   - express
   - Knex
