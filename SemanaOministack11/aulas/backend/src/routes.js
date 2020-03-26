@@ -10,6 +10,8 @@ const routes = express.Router();
 // Importando a Controller
 const OngController = require('./controller/OngController');
 const IncidentController = require('./controller/IncidentController');
+const ProfileController = require('./controller/ProfileController');
+const SessionController = require('./controller/SessionController');
 
 /**
  * Esse metodo :
@@ -35,10 +37,16 @@ const IncidentController = require('./controller/IncidentController');
 
   */
 
-routes.post('/ongs', OngController.create);
-routes.get('/listar',OngController.listar);
+ routes.get('/ongEspecifica',ProfileController.ongEspecifica);
+ routes.get('/listar',OngController.listar);
+ routes.get('/listarIncidents',IncidentController.listarIncidents);
 
-routes.post('/criarIncidents',IncidentController.create);
-routes.get('/listarIncidents',IncidentController.listarIncidents);
- 
-module.exports = routes;
+ // Criando sesaso de login
+ routes.post('/sessions',SessionController.create);
+
+ routes.post('/ongs', OngController.create);
+ routes.post('/criarIncidents',IncidentController.create);
+ //Route Param
+ routes.delete('/incidents/:id',IncidentController.deletar);
+
+ module.exports = routes;
