@@ -40,6 +40,7 @@ const SessionController = require('./controller/SessionController');
  routes.get('/ongEspecifica',ProfileController.ongEspecifica);
  routes.get('/listar',OngController.listar);
  routes.get('/listarIncidents',IncidentController.listarIncidents);
+ routes.get('/profile',ProfileController.ongEspecifica)
 
  // Criando sesaso de login
  routes.post('/sessions',SessionController.create);

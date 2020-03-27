@@ -55,7 +55,7 @@ module.exports = {
         const {title,description,value} = req.body;
         //Recuperar o ID da ong atraves do authzion
         const ong_id =  req.headers.authorization;
-        console.log(ong_id)
+        console.log('LOG ONG ID' + ong_id)
         const result = await connectionDb('incidents').insert({
             title,
             description,
